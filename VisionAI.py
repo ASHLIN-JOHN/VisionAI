@@ -450,6 +450,12 @@ class Ui_Vision(QThread):
                     pyautogui.hotkey('alt', 'f4')
                 elif 'go to home' in self.query:
                     pyautogui.hotkey('win', 'd')
+                elif 'shutdown' in query or 'turn off' in query:
+                    speak("Shutting down the system in 5 seconds. Goodbye!")
+                    os.system("shutdown /s /t 5")
+                elif 'log off' in query or 'sign out' in query:
+                    speak("Logging off in 5 seconds.")
+                    os.system("shutdown /l")
                 elif "sleep for" in self.query:
                     self.sleep(self.query)
 
