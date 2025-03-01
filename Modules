@@ -1,0 +1,21 @@
+#modules used
+import subprocess
+import sys
+from PyQt5.QtWidgets import QWidget, QApplication, QMainWindow
+from visionmainfile import Ui_NARUTOAIUI
+from PyQt5 import QtGui, QtCore
+from PyQt5.QtCore import QTimer
+import speech_recognition as sr
+import cv2
+import pytesseract as pyt
+import pyttsx3
+import datetime
+import wikipedia
+import pyautogui, pywhatkit, qrcode, pyjokes
+import webbrowser
+import os
+import random
+from PyQt5.QtCore import QObject, pyqtSignal, QThread
+import time
+
+
